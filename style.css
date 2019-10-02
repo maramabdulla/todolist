@@ -1,0 +1,35 @@
+
+#body{
+    background-color: rgb(232, 236, 240);
+ }
+ .contenter{
+    box-sizing: border-box;
+    border: solid black 1px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+   
+
+ }
+#box {
+    box-sizing: border-box;
+    border: solid black 1px;
+
+}
+.listi{
+    
+}
+.text{
+    width: 80%;
+}
+.add{
+    float: right;
+  
+}
+.clearComplete{
+    float: right;
+}
+.btn{
+    float: right;
+}
