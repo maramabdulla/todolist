@@ -1,54 +1,38 @@
-/* function todolist(){
-   var item =document.getElementById("todoinput").value;
-   var text =document.createTextNode(item);
-   var newitem = document.createElement("li");
-   newitem.appendChild(text);
-   document.getElementById("todolist").appendChild(newitem);*/
-   // Create a new list item when clicking on the "Add" button
-/* function todolist(){
-   var item =document.getElementById("todoinput").value;
-   var text =document.createTextNode(item);
-   var newitem = document.createElement("li");
-   newitem.appendChild(text);
-   document.getElementById("todolist").appendChild(newitem);*/
-   // Create a new list item when clicking on the "Add" button
-   let list =[];
-   function AddToDo(){
-    var item =document.getElementById("text").value;
-    var inputValueObj =[{value : document.getElementById("text").value , check : false }];
-    var newtext =document.createTextNode(item);
-    var newitem = document.createElement("li");
-    newitem.appendChild(newtext);
-    document.getElementById("list").appendChild(newitem);
-    
-       list.push(item );
-       list.forEach((item, i) => {
-       item.id = i + 1;
-            });
+var list = [];
+function AddToDo(){
+   var li = document.createElement('LI');
+   var text =document.getElementById("text").value;
+   var inputValueObj =[{value : document.getElementById('text').value , check : false }];
+   var t = document.createTextNode(text);
+   list.push(inputValueObj);
+   list.forEach((item, i) => {
+ item.id = i + 1;
+});
 console.log(list);
-console.log(list.length);
-}
-/* function AddToDo(){
-var li = document.createElement("li");
-var inputValue = document.getElementById("text").value;
-var t = document.createTextNode(inputValue);
 li.appendChild(t);
-if (inputValue === '') {
-alert("You must write something!");
-} else {
+li.setAttribute("class", "task");
+li.setAttribute("id", "task");
 document.getElementById("list").appendChild(li);
+document.getElementById("text").value="";
+// add IMG at first
+var mylist = document.getElementsByTagName("li");
+var i;
+for (i = li.length-1; i < li.length; i++) {
+    var img3 = document.createElement("IMG");
+    img3.setAttribute("src", "panorama_fish_eye-24px.svg");
+    img3.setAttribute("class", "img3");
+    img3.setAttribute("id", "uncheched");
+    img3.setAttribute("alt", "");
+    mylist[i].appendChild(img3);
 }
+// add IMG at last
+for (i = mylist.length-1; i < mylist.length; i++) {
+   var img4 = document.createElement("IMG");
+   img4.setAttribute("src", "highlight_off-24px.svg");
+   img4.setAttribute("class", "img4");
+   img4.setAttribute("id", "close");
+   img4.setAttribute("alt", "");
+   mylist[i].appendChild(img4);
 }
-document.getElementById("text").value = "";*/
-/* function AddToDo(){
-var li = document.createElement("li");
-var inputValue = document.getElementById("text").value;
-var t = document.createTextNode(inputValue);
-li.appendChild(t);
-if (inputValue === '') {
-alert("You must write something!");
-} else {
-document.getElementById("list").appendChild(li);
+// close LI element on click
 }
-}
-document.getElementById("text").value = "";*/

@@ -1,36 +1,31 @@
 <html>
-    <head>
-            <link rel="stylesheet" href="style.css">
-
-    </head>
-    <body id="body">
-        
-       <div class="contenter">
-           <div id="box" class="box">
-                <img src="22px (2) (1) (1).svg" class="listi">
-                <input type="text" class="text" id="text" placeholder="Type your todo list">
-                <img src="add_circle_outline-24px.svg" class="add" id="add" onclick="AddToDo()">
-           </div>
-           <div id="tool">
-                <img src="done_all-24px.svg" class="done">
-                <a class="completeText" >Complet all tasks</a>
-                <a class="clearComplete" >Clear completed</a>
-               
-           </div>
-           <hr class="line">
-           <div id="div3">
-               <ul id="list" class="list">  </ul>
-           </div>
-            <div id="all" class="all">
-                   
-                    <b class="tasksleft" style="color:black;" id="num">0</b>
-                    <a >tasks left </a>
-                    <a class="btn" id="complete">completed</a>
-                    <a class="btn">Uncomplete</a>
-                    <a class="btn" >All</a>
-               </div>
-
-       </div>
-    <script src="./main.js"></script>
-    </body>
+  <head>
+          <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="body">
+     <div class="contenter">
+         <div id="box" class="box">
+              <img src="22px (2) (1) (1).svg" class="listi">
+              <input type="text" class="text" id="text" placeholder="Type your todo list">
+              <img src="add_circle_outline-24px.svg" class="add" id="add" onclick="AddToDo()">
+         </div>
+         <div id="tool">
+              <img src="done_all-24px.svg" class="done">
+              <a class="completeText">Complet all tasks</a>
+              <a class="clearComplete">Clear completed</a>
+         </div>
+         <hr class="line">
+         <div id="div3">
+             <div id="list" class="list">  </div>
+         </div>
+          <div id="all" class="all">
+                  <b class="tasksleft" style="color:black;" id="num">0</b>
+                  <a class="tasksleft">tasks left </a>
+                  <a class="btn" id="complete">completed</a>
+                  <a class="btn">Uncomplete</a>
+                  <a class="btn">All</a>
+             </div>
+     </div>
+  <script src="main.js"></script>
+  </body>
 </html>
